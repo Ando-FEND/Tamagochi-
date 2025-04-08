@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/font/W95FA.otf') 
+}
+body {
+    font-family: 'MyCustomFont', sans-serif;
+    background-image: url('/backround.jfif');
+
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    color: white;
+    
+}
+.hidden{
+    display: none;
+}
+#inputField{
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'MyCustomFont';
+}
+
+#pets{
+    width: 100%;
+    height: 32px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'MyCustomFont';
+}
+
+#summon{
+
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: auto;
+    height: 30px;
+    font-size: 17px;
+    border: 4px solid black;
+    border-radius: 5px;
+    font-family: 'MyCustomFont', sans-serif;
+
+}
+
+#feed, #play, #nap{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border: 4px solid black;
+    border-radius: 5px;
+
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    position: relative;
+}
+
+.input-container{
+    position: absolute; 
+    top: 20px; 
+    left: 40px; 
+    width: 300px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+
+}
+.stat{
+    display: flex;
+    
+}
+
+.event-history{
+    background-color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    max-height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.event-history h3 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+#event-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto; 
+    max-height: 250px; 
+    flex-grow: 1;
+}
+
+#event-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pet-stats{
+    width: 300px;
+}
+
+.pet-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pet-actions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#pet-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+ 
+.stat {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+
+  .stat label {
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+  
+
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .progress {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  
+  #energy-bar {
+    background-color: #3498db; 
+  }
+  
+  #fullness-bar {
+    background-color: #e67e22; 
+  }
+  
+  #happiness-bar {
+    background-color: #2ecc71; 
+  }
+  
+  
+  .stat span {
+    margin-top: 3px;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  .health-container, .energy-container, .mana-container {
+    display: flex;
+  }
+

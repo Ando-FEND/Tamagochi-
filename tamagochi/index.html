@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+    
+</head>
+<body>
+    
+    <main>
+    <div class="input-container">
+    <input type="text" id="inputField" placeholder="Name your tamagochi">
+    <label for="type">Pick your type</label>
+    <select name="pets" id="pets">
+        <option value="orc">Orc</option>
+        <option value="goblin">Goblin</option>
+        <option value="gnome">Gnome</option>
+        <option value="murloc">murloc</option>
+    </select>
+    <button id="summon">Summon tamagochi</button>
+</div>
+
+
+
+
+<div class="pet-stats hidden">
+    <div class="stat">
+        <label>Happiness:</label>
+        <div class="health-container">
+        <div class="progress-bar">
+            <div id="happiness-bar" class="progress" style="width: 50%"></div>
+        </div>
+        <span id="happiness-value">50</span>
+    </div>
+    </div>
+
+
+    <div class="stat">
+        <label>Energy:</label>
+        <div class="energy-container">
+        <div class="progress-bar">
+            <div id="energy-bar" class="progress" style="width: 50%"></div>
+        </div>
+        <span id="energy-value">50</span>
+    </div>
+    </div>
+    
+    
+    <div class="stat">
+        <label>Fullness:</label>
+        <div class="mana-container">
+        <div class="progress-bar">
+            <div id="fullness-bar" class="progress" style="width: 50%"></div>
+        </div>
+        <span id="fullness-value">50</span>
+    </div>
+    
+
+</div>
+
+
+
+<div class="pet-display">
+    <h3 id="pet-name"></h3>
+    <p id="pet-type"></p>
+    <img id="pet-image" src="" alt="Your pet">
+</div>
+
+<div class="pet-actions">
+    <button id="feed">Feed</button>
+    <button id="play">Play</button>
+    <button id="nap">Nap</button>
+</div>
+
+<div class="event-history">
+    <h3>Event History</h3>
+    <ul id="event-list"></ul>
+
+</div>
+</div>
+</main>
+    
+    
+</body>
+</html>
